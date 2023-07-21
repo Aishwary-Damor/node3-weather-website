@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html>
     <head>
+           <style>
+body {
+  background-image: url("./img/Weather.jpg");
+  background-repeat: no-repeat;
+  height: 100%;
+  margin: 0;
+  background-size: cover;
+}
+</style>
         <title>About</title>
         <link rel="icon" href="./img/weather.png">
         <link rel="stylesheet" href="./css/style.css">
@@ -9,8 +18,10 @@
            <div class="main-content">
                 {{>header}}
                 <p>About us</p>
+                <p>The Earth's weather functions as an interdependent system. For example, a hurricane in the Atlantic has the ability to influence the distribution of pressure formations in Europe. Occasionally, it may even make its way to Europe itself as a post-tropical storm. The Ventusky application allows for the illustration of the interdependence of the entire system, displaying the development of pressure, wind, cloud cover, precipitation, and temperature on the map.
+
+For visualisation of wind data, we utilise current lines that are used to illustrate the movement of particles in liquids. Air and liquid have many similar physical properties, and current lines are suitable for illustrating wind as well. Because of this, the map depicts wonderful formations illustrating pressure lows that draw in the air around them. We have created an entirely new system of displaying waves. Through the use of animated arcs, our visualisation clearly differentiates the direction of movement and height of both wind waves and swells. For the other meteorological elements, we chose colour scales that appropriately illustrate precipitation, air pressure, and temperature. The colours correspond with the feeling that the given weather phenomena evokes in us. For temperature, blue illustrates cool weather while dark red depicts hot desert air. For precipitation, we concentrated on the danger associated with it. Blue colours represent low precipitation totals that will not result in floods. Orange and red hues, on the other hand, are dangerous and may bring flooding.</p>
             </div>
-            <img class="portrait" src="./img/lion.png">
             {{>footer}}
         </body>
 </html>
